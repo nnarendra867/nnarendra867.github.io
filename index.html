@@ -148,6 +148,12 @@ section{padding:100px 6vw;position:relative;z-index:1;}
 .tool-n{font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue2);margin-bottom:6px;}
 .tool-t{font-family:var(--head);font-weight:700;font-size:1.04rem;color:#f1f5fb;margin-bottom:6px;line-height:1.3;}
 .tool-p{font-size:.85rem;color:#8fa0b8;line-height:1.6;margin-bottom:12px;}
+.tool-ul{list-style:none;margin-bottom:12px;}
+.tool-ul li{position:relative;padding-left:15px;font-size:.85rem;color:#8fa0b8;line-height:1.55;margin-bottom:5px;}
+.tool-ul li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:2px;background:var(--blue2);}
+.tl-ul{list-style:none;margin-bottom:12px;max-width:650px;}
+.tl-ul li{position:relative;padding-left:18px;font-size:.94rem;color:#93a1b8;line-height:1.62;margin-bottom:6px;}
+.tl-ul li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;background:var(--blue2);}
 .tool-b{display:flex;flex-wrap:wrap;gap:6px;}
 .tb{font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:99px;background:rgba(47,107,255,0.08);border:1px solid rgba(47,107,255,0.18);color:#9db4d6;}
 
@@ -355,12 +361,12 @@ footer{border-top:1px solid var(--border);padding:30px 6vw;position:relative;z-i
     <h2 class="h2 rev">10+ Tools Built. Flagship Six.</h2>
     <p class="sub rev">Every tool was born from a real frustration on the job — not a tutorial or a side project.</p>
     <div class="tools-grid">
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🔍</div><div class="tool-n">Tool 01</div><div class="tool-t">Prepress Image Comparison</div><div class="tool-p">AI-vision comparison of vendor artwork vs master references — pixel-level diff maps, quality metrics, vendor scorecards and full audit logging.</div><div class="tool-b"><span class="tb">Vision AI</span><span class="tb">Artwork QC</span></div></div>
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🏥</div><div class="tool-n">Tool 02</div><div class="tool-t">Print QC Management Portal</div><div class="tool-p">Enterprise platform for shade-card &amp; product-master lifecycle, QC inspections and prepress validation — captures Pantone/CMYK/LAB/Delta-E and serialization data.</div><div class="tool-b"><span class="tb">Pharma QC</span><span class="tb">AQL</span></div></div>
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">📊</div><div class="tool-n">Tool 03</div><div class="tool-t">QC Analytics &amp; Reporting</div><div class="tool-p">Real-time KPI dashboards across QC, prepress and product status — replacing manual Excel with expiry alerts, pass/fail, CAPA queues and vendor charts.</div><div class="tool-b"><span class="tb">Analytics</span><span class="tb">Automation</span></div></div>
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">📦</div><div class="tool-n">Tool 04</div><div class="tool-t">Print Sample Hub</div><div class="tool-p">Digital lifecycle management for print samples — QR tracking labels, sequential IDs and cross-team visibility across factory environments.</div><div class="tool-b"><span class="tb">QR Tracking</span><span class="tb">Sample Mgmt</span></div></div>
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🎨</div><div class="tool-n">Tool 05</div><div class="tool-t">VectorSync Artwork PreCheck</div><div class="tool-p">Converts .AI/.EPS/.PDF/.ZIP artwork to print-ready PDF + PNG at 600 DPI, generates analysis reports and runs automated image comparison.</div><div class="tool-b"><span class="tb">Prepress</span><span class="tb">Automation</span></div></div>
-      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🧠</div><div class="tool-n">Tool 06</div><div class="tool-t">Deep Dive Desk (Jira Analytics)</div><div class="tool-p">Delivery/SLA analytics with client-facing PPTX exports and bulk Jira automation — turning a multi-hour manual task into a single CSV upload.</div><div class="tool-b"><span class="tb">Jira API</span><span class="tb">Reporting</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🔍</div><div class="tool-n">Tool 01</div><div class="tool-t">Prepress Image Comparison</div><ul class="tool-ul"><li>AI-vision compare against master artwork</li><li>Pixel-level diff maps &amp; quality metrics</li><li>Vendor scorecards + full audit logging</li></ul><div class="tool-b"><span class="tb">Vision AI</span><span class="tb">Artwork QC</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🏥</div><div class="tool-n">Tool 02</div><div class="tool-t">Print QC Management Portal</div><ul class="tool-ul"><li>Shade-card &amp; product-master lifecycle</li><li>Captures Pantone/CMYK/LAB/Delta-E specs</li><li>QC inspections &amp; prepress validation</li></ul><div class="tool-b"><span class="tb">Pharma QC</span><span class="tb">AQL</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">📊</div><div class="tool-n">Tool 03</div><div class="tool-t">QC Analytics &amp; Reporting</div><ul class="tool-ul"><li>Real-time QC &amp; prepress KPI dashboards</li><li>Expiry alerts, pass/fail &amp; CAPA queues</li><li>Replaces manual Excel tracking</li></ul><div class="tool-b"><span class="tb">Analytics</span><span class="tb">Automation</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">📦</div><div class="tool-n">Tool 04</div><div class="tool-t">Print Sample Hub</div><ul class="tool-ul"><li>QR-coded sample tracking labels</li><li>Sequential IDs &amp; lifecycle history</li><li>Cross-team factory visibility</li></ul><div class="tool-b"><span class="tb">QR Tracking</span><span class="tb">Sample Mgmt</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🎨</div><div class="tool-n">Tool 05</div><div class="tool-t">VectorSync Artwork PreCheck</div><ul class="tool-ul"><li>Converts AI/EPS/PDF/ZIP → print-ready PDF + PNG (600 DPI)</li><li>Auto-generates analysis reports</li><li>Built-in image comparison</li></ul><div class="tool-b"><span class="tb">Prepress</span><span class="tb">Automation</span></div></div>
+      <div class="tool rev"><div class="tool-top"></div><div class="tool-ic">🧠</div><div class="tool-n">Tool 06</div><div class="tool-t">Deep Dive Desk (Jira Analytics)</div><ul class="tool-ul"><li>Delivery/SLA analytics dashboards</li><li>Client-facing PPTX exports</li><li>Bulk Jira automation via CSV upload</li></ul><div class="tool-b"><span class="tb">Jira API</span><span class="tb">Reporting</span></div></div>
     </div>
   </div>
 </section>
@@ -374,23 +380,34 @@ footer{border-top:1px solid var(--border);padding:30px 6vw;position:relative;z-i
     <div class="tl">
       <div class="tl-item rev"><div class="tl-dot"></div>
         <div><div class="tl-date">Dec 2023 – Present</div><div class="tl-co">Ennoventure Technologies Pvt. Ltd. · Bengaluru</div></div>
-        <div class="tl-r"><div class="tl-role">Printing Sr. Associate → Lead – Printing</div>
-          <div class="tl-d">Promoted to Lead in Dec 2024. Lead secure-packaging print operations across offset, gravure, flexo and digital for global pharma, FMCG and automotive brands. Own artwork feasibility, prepress validation, colour compliance (Pantone/spot vs CMYK) and print/authentication quality. Built 10+ internal AI tools for prepress QC, colour and reporting.</div>
-          <div class="tl-tags"><span class="tl-tag">Secure Packaging</span><span class="tl-tag">Prepress Validation</span><span class="tl-tag">Colour Management</span><span class="tl-tag">Anti-Counterfeit</span><span class="tl-tag">AI Tools</span></div>
+        <div class="tl-r"><div class="tl-role">Lead – Printing</div>
+          <ul class="tl-ul">
+            <li>Lead secure-packaging print operations across offset, gravure, flexo &amp; digital for leading global pharma, FMCG &amp; automotive brands.</li>
+            <li>Own artwork feasibility, prepress validation &amp; colour-format compliance (Pantone/spot vs CMYK) before every production release.</li>
+            <li>Drive colour management to brand tolerances — Delta-E control, spectrophotometer Lab* evaluation &amp; ink-formulation guidance to converters.</li>
+            <li>Validate print &amp; authentication performance; resolve pattern distortion, scan failures, colour mismatch &amp; ink inconsistencies.</li>
+            <li>Built 10+ internal AI tools that automate prepress QC, colour &amp; shade-card management and reporting.</li>
+          </ul>
+          <div class="tl-tags"><span class="tl-tag">Secure Packaging</span><span class="tl-tag">Prepress &amp; Artwork QA</span><span class="tl-tag">Colour Management</span><span class="tl-tag">Anti-Counterfeit</span><span class="tl-tag">AI Tools</span></div>
         </div>
       </div>
       <div class="tl-item rev"><div class="tl-dot"></div>
         <div><div class="tl-date">Aug 2019 – Dec 2023</div><div class="tl-co">Sukee Print Pack · Bengaluru</div></div>
         <div class="tl-r"><div class="tl-role">Printing &amp; Packaging Development &amp; QA In-charge</div>
-          <div class="tl-d">Led packaging development and QA for FMCG, pharma, garments and cosmetics brands — from material/structure selection and shade-card prep through print trials to final approval. Managed the development team and vendor colour standards. Brands: Wipro, Jockey, Van Heusen, Nykaa, Titan, Yardley, Enamor.</div>
-          <div class="tl-tags"><span class="tl-tag">Packaging Development</span><span class="tl-tag">Artwork QA</span><span class="tl-tag">Shade Cards</span><span class="tl-tag">Vendor Management</span></div>
+          <ul class="tl-ul">
+            <li>Led packaging development &amp; artwork QA for FMCG, pharma, garments &amp; cosmetics — material selection through print trials to approval.</li>
+            <li>Ran shade-card prep &amp; vendor colour standards for brands like Jockey, Wipro, Titan, Van Heusen &amp; Nykaa.</li>
+          </ul>
+          <div class="tl-tags"><span class="tl-tag">Packaging Development</span><span class="tl-tag">Artwork QA</span><span class="tl-tag">Vendor Management</span></div>
         </div>
       </div>
       <div class="tl-item rev"><div class="tl-dot"></div>
         <div><div class="tl-date">Apr 2016 – Jul 2019</div><div class="tl-co">Sri Lakshmi Narayana Book Binders · Hyderabad</div></div>
         <div class="tl-r"><div class="tl-role">Printing &amp; Packaging Quality Control Executive</div>
-          <div class="tl-d">Established QC procedures for printing and packaging materials. Ran testing protocols, analysed quality data, generated deviation reports and trained personnel. Maintained a structured documentation repository for audits.</div>
-          <div class="tl-tags"><span class="tl-tag">QC Procedures</span><span class="tl-tag">Testing Protocols</span><span class="tl-tag">Team Training</span></div>
+          <ul class="tl-ul">
+            <li>Established QC procedures, testing protocols &amp; deviation reporting for printing and packaging materials.</li>
+          </ul>
+          <div class="tl-tags"><span class="tl-tag">Quality Control</span></div>
         </div>
       </div>
     </div>
