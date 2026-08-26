@@ -113,6 +113,7 @@ section{padding:100px 6vw;position:relative;z-index:1;}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:3fr 2fr;gap:52px;margin-top:46px;align-items:start;}
+.about-grid>*{min-width:0;}
 .about p{color:#a7b4c8;margin-bottom:18px;font-size:1.04rem;line-height:1.85;}
 .about p strong{color:#e8eef7;}
 .about p:last-child{margin-bottom:0;}
@@ -127,6 +128,13 @@ section{padding:100px 6vw;position:relative;z-index:1;}
 .brands:hover .brands-track{animation-play-state:paused;}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 .brand-tag{font-size:.8rem;padding:5px 12px;border-radius:99px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);color:#9fb0c6;transition:.2s;white-space:nowrap;flex-shrink:0;}
+.brandlogo{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 16px;border-radius:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);flex-shrink:0;transition:.25s;}
+.brandlogo:hover{border-color:var(--border2);background:rgba(47,107,255,0.06);}
+.brandlogo img{height:20px;width:auto;max-width:92px;object-fit:contain;filter:grayscale(1) brightness(0) invert(1);opacity:.72;transition:.25s;}
+.brandlogo:hover img{filter:none;opacity:1;}
+.brandlogo b{display:none;font-size:.82rem;font-weight:600;color:#aeb9cc;white-space:nowrap;}
+.brandlogo.txt img{display:none;}
+.brandlogo.txt b{display:inline;}
 .brand-tag:hover{color:#fff;border-color:var(--border2);}
 
 /* EXPERTISE */
@@ -320,10 +328,7 @@ footer{border-top:1px solid var(--border);padding:30px 6vw;position:relative;z-i
         <div class="card rev"><div class="card-l">Education</div><div class="card-v">B.Tech – Printing &amp; Packaging Technology</div><div class="card-s">Guru Jambheshwar University · 2019 · + Diploma in Printing Tech, 2016</div></div>
         <div class="card rev"><div class="card-l">Based In</div><div class="card-v">Bengaluru, India</div></div>
         <div class="card rev"><div class="card-l">Brands Worked With</div>
-          <div class="brands"><div class="brands-track">
-            <span class="brand-tag">Jockey</span><span class="brand-tag">Wipro</span><span class="brand-tag">Titan</span><span class="brand-tag">MTR</span><span class="brand-tag">Van Heusen</span><span class="brand-tag">Nykaa</span><span class="brand-tag">Yardley</span><span class="brand-tag">Enamor</span><span class="brand-tag">Bio Plus</span><span class="brand-tag">Premier</span>
-            <span class="brand-tag">Jockey</span><span class="brand-tag">Wipro</span><span class="brand-tag">Titan</span><span class="brand-tag">MTR</span><span class="brand-tag">Van Heusen</span><span class="brand-tag">Nykaa</span><span class="brand-tag">Yardley</span><span class="brand-tag">Enamor</span><span class="brand-tag">Bio Plus</span><span class="brand-tag">Premier</span>
-          </div></div>
+          <div class="brands"><div class="brands-track"><span class="brandlogo"><img src="https://logo.clearbit.com/jockey.in" alt="Jockey" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Jockey</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/wipro.com" alt="Wipro" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Wipro</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/titancompany.in" alt="Titan" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Titan</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/mtrfoods.com" alt="MTR" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>MTR</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/vanheusenindia.com" alt="Van Heusen" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Van Heusen</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/nykaa.com" alt="Nykaa" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Nykaa</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/yardley.in" alt="Yardley" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Yardley</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/enamor.co.in" alt="Enamor" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Enamor</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/biopluslife.com" alt="Bio Plus" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Bio Plus</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/premierinks.com" alt="Premier" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Premier</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/jockey.in" alt="Jockey" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Jockey</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/wipro.com" alt="Wipro" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Wipro</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/titancompany.in" alt="Titan" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Titan</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/mtrfoods.com" alt="MTR" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>MTR</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/vanheusenindia.com" alt="Van Heusen" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Van Heusen</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/nykaa.com" alt="Nykaa" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Nykaa</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/yardley.in" alt="Yardley" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Yardley</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/enamor.co.in" alt="Enamor" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Enamor</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/biopluslife.com" alt="Bio Plus" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Bio Plus</b></span><span class="brandlogo"><img src="https://logo.clearbit.com/premierinks.com" alt="Premier" loading="lazy" onerror="this.closest('.brandlogo').classList.add('txt')"><b>Premier</b></span></div></div>
         </div>
       </div>
     </div>
